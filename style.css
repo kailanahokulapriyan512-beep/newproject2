@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container h1 {
+    font-size: 1.6rem;
+}
+
+.logo-container p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.lang-btn.active {
+    background-color: white;
+    color: #2e7d32;
+}
+
+.hero {
+    background: linear-gradient(rgba(46, 125, 50, 0.85), rgba(46, 125, 50, 0.85)), 
+                url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80') center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #81c784;
+    color: #1b5e20;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e8f5e9;
+    padding-bottom: 0.5rem;
+}
+
+.calculator-card {
+    grid-column: 1 / -1;
+    background: #e8f5e9;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+button#calc-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.result-box {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1b5e20;
+    color: white;
+    margin-top: 2rem;
+}

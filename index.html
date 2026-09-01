@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>மண்ணும் மனிதமும் காப்போம் | Save Soil & Humanity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo-container">
+            <h1 id="nav-title">மண்ணும் மனிதமும் காப்போம்</h1>
+            <p id="org-name">அன்பின் பாதை எண்ணம்போல் வாழ்க்கை கலை இலக்கிய மன்றம் – திருகோணமலை</p>
+        </div>
+        <div class="lang-toggle">
+            <button onclick="toggleLanguage('ta')" class="lang-btn active" id="btn-ta">தமிழ்</button>
+            <button onclick="toggleLanguage('en')" class="lang-btn" id="btn-en">English</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 id="hero-heading">வீசாதே... சேமித்துக் கொடு!</h2>
+        <p id="hero-sub">குப்பையாக வீசினால் மாசு; சேமித்துக் கொடுத்தால் வளம்.</p>
+        <a href="#calculator" class="cta-btn" id="hero-cta">புள்ளிகளைக் கணக்கிடுங்கள்</a>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="container">
+        
+        <!-- About Project -->
+        <section class="card">
+            <h3 id="about-title">திட்டத்தின் நோக்கம்</h3>
+            <p id="about-desc">திருகோணமலை மாவட்டத்தில் பொலித்தீன் மற்றும் பிளாஸ்டிக் கழிவுகளை முறையாகப் பிரித்துச் சேகரித்து, மறுசுழற்சிக்கு அனுப்பக்கூடிய நிலையான சமூகக் கட்டமைப்பை உருவாக்குதல்.</p>
+        </section>
+
+        <!-- Target & Pilot Plan -->
+        <section class="card">
+            <h3 id="target-title">முன்னோடித் திட்ட இலக்கு (3 மாதங்கள்)</h3>
+            <ul>
+                <li id="t1">100 குடும்பங்கள்</li>
+                <li id="t2">5 வர்த்தக நிலையங்கள்</li>
+                <li id="t3">2 பாடசாலைகள்</li>
+                <li id="t4">3 சேகரிப்பு நிலையங்கள்</li>
+            </ul>
+        </section>
+
+        <!-- Point Calculator (Interactive Feature) -->
+        <section class="card calculator-card" id="calculator">
+            <h3 id="calc-title">பசுமைப் புள்ளிகள் கணிப்பான்</h3>
+            <p id="calc-desc">நீங்கள் சேகரித்த பிளாஸ்டிக் எடையை (kg) உள்ளிட்டு புள்ளிகளைக் கண்டறியவும்:</p>
+            
+            <div class="input-group">
+                <input type="number" id="weightInput" placeholder="எடை (kg)" min="0">
+                <button onclick="calculatePoints()" id="calc-btn">கணக்கிடு</button>
+            </div>
+            
+            <div id="result" class="result-box"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">&copy; 2026 அன்பின் பாதை எண்ணம்போல் வாழ்க்கை கலை இலக்கிய மன்றம், திருகோணமலை.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
